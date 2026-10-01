@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>السبورة الإلكترونية</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="app">
+
+    <h1>السبورة الإلكترونية</h1>
+
+    <div class="toolbar">
+
+      <button id="penBtn">✏️ قلم</button>
+
+      <button id="eraserBtn">🧽 ممحاة</button>
+
+      <label class="color-box">
+        🎨
+        <input type="color" id="colorPicker" value="#ffffff">
+      </label>
+
+      <label class="size-box">
+        حجم القلم
+        <input type="range" id="sizePicker" min="1" max="40" value="5">
+        <span id="sizeValue">5</span>
+      </label>
+
+      <button id="undoBtn">↩️ تراجع</button>
+
+      <button id="redoBtn">↪️ إعادة</button>
+
+      <button id="clearBtn">🗑️ مسح الكل</button>
+
+      <button id="saveBtn">💾 حفظ</button>
+
+    </div>
+
+    <canvas id="board"></canvas>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+  </html>
